@@ -86,6 +86,7 @@ public class FruitController {
         verifyCorrectPayload(fruit);
 
         fruit.setId(id);
+        fruit.setName("UPATED:" + fruit.getName());
         return repository.save(fruit);
     }
 
